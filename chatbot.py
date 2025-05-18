@@ -32,7 +32,8 @@ search=image.load("images/search.png")
 ###marker1 = image.load("images/marker1.png")  
 ##highliter = image.load("images/highlighter.png")  
 ##stamp = image.load("images/stamp.png")  
-##info   = image.load("images/info.png")  
+##info   = image.load("images/info.png") 
+# ?change 
 
 # RECT
 BGrect = Rect(0, 0, 1000, 700)
