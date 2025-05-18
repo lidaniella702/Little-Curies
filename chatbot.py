@@ -4,9 +4,11 @@ from random import *
 from pprint import *
 from openai import OpenAI
 import os
+from api_key import OPENAI_API_KEY
+
 font.init()
 init()
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 width,height=1000,700
 screen_surface = display.set_mode((width, height))
@@ -23,7 +25,7 @@ WHITE = (255, 255, 255)
 myClock = time.Clock()
 running = True
 # IMAGES
-marie = image.load("images/Little Curies.jpg")
+marie = image.load("images/Little_Curies.jpg")
 bigmarie = image.load("images/Big Curies.jpg")
 search=image.load("images/search.png")
 ##marker = image.load("images/marker.png")
