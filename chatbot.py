@@ -6,7 +6,8 @@ from openai import OpenAI
 import os
 font.init()
 init()
-client = OpenAI(api_key="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")
+API_KEY = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=API_KEY)
 
 width,height=1000,700
 screen_surface = display.set_mode((width, height))
